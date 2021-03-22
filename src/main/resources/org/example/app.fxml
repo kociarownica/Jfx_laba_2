@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.202-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controller">
+   <children>
+      <AnchorPane layoutX="53.0" layoutY="40.0" prefHeight="297.0" prefWidth="244.0" style="-fx-border-color: #000000;" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="40.0">
+         <children>
+            <Text layoutX="76.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Пациент">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+            <Button layoutX="62.0" layoutY="203.0" mnemonicParsing="false" onAction="#button" prefHeight="74.0" prefWidth="180.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-radius: 20; -fx-border-color: #000000;" text="Новые симптомы" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+            <MenuButton layoutX="64.0" layoutY="69.0" mnemonicParsing="false" text="Симптомы">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#buttonNose" text="нос" />
+                  <MenuItem mnemonicParsing="false" onAction="#buttonEar" text="ухо" />
+                  <MenuItem mnemonicParsing="false" onAction="#buttonThroat" text="горло" />
+               </items>
+            </MenuButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="326.0" layoutY="40.0" prefHeight="297.0" prefWidth="244.0" style="-fx-border-color: #000000;" AnchorPane.bottomAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="40.0">
+         <children>
+            <Text layoutX="102.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Врач">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+            <TextArea fx:id="text" layoutX="29.0" layoutY="58.0" prefHeight="157.0" prefWidth="185.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
