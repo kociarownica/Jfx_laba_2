@@ -1,6 +1,6 @@
-package org.example;
+package org.example.classes;
 
-public class Patient extends Human{
+public class Patient extends Human {
 
     protected Disease dis;
 
@@ -12,5 +12,9 @@ public class Patient extends Human{
     public void complain(){
         Doctor doc = new Doctor("Иннокентий", 46, "Педиатр");
         doc.diagnose(dis.getSymptoms());
+    }
+
+    public Disease getDis(){
+        return dis;
     }
 }

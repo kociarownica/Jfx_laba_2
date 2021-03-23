@@ -1,6 +1,6 @@
-package org.example;
+package org.example.classes;
 
-class Disease {
+public class Disease {
 
     private String symptoms;
 
